@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to ePapers</title>
+    <link rel="stylesheet" href="css/Logsign.css">
+    <link href="img/favicon.ico" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+</head>
+<body class="body">
+    <section class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 mx-auto rounded shadow bg-white">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <img src="img/about.jpg" alt="loginimage" class="img-fluid p-5 m-10">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="m-5 text-center">
+                                <h1>Please Sign Up</h1>
+                            </div>
+                            <form class="m-5" id="signup_form">
+                                <div class="mb-3">
+                                    <label class="form-label" for="firstname">Name</label>
+                                    <input class="form-control" name="fname" placeholder="Enter your Name" type="text" id="Fname">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="lastname">Phone No.</label>
+                                    <input class="form-control" type="tel" placeholder="Enter your PhoneNo."name="lname" id="Lname">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="email">Email</label>
+                                    <input class="form-control" type="email" placeholder="Enter your Email"name="email" id="Email">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="password">Password</label>
+                                    <input class="form-control" type="text" placeholder="Enter your Password"name="password" id="password">
+                                </div>
+                                <!-- <div class="mb-3">
+                                    <label class="form-label" for="cpassword">Confirm Password</label>
+                                    <input class="form-control" type="text" name="cpassword" id="cpassword">
+                                </div> -->
+                                <div class="row mb-3">
+                                    
+                                    <div>
+                                        <input id="sbtn"type="submit" class="form-control btn btn-primary mt-3">
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        window.onload = () => {
+    const token = sessionStorage.getItem("token");
+    if (token !== null) {
+      window.location = "index.html";
+    }
+  };
+
+        const form = document.getElementById('signup_form');
+        form.addEventListener('submit',async(e)=>{
+            e.preventDefault();
+            const fname = form['fname'].value;
+            const phoneno = form['lname'].value;
+            const email = form['email'].value;
+            const password = form['password'].value;
+            // const cpassword = form['cpassword'].value;
+            const data = {
+             name:fname,
+             email:email,
+             password:password,
+            //  cpassword:cpassword,
+             phoneNo:phoneno   
+            }
+            const url= 'http://localhost:3001/user/register';
+            const response = await fetch(url, {
+    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+    mode: 'cors', // no-cors, *cors, same-origin
+    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+    body: JSON.stringify(data) // body data type must match "Content-Type" header
+  });
+  if(response.status===200){
+    window.location = 'login.html'
+  }else{
+    console.log(response)
+  }
+        });
+    </script>
+</body>
+</html>

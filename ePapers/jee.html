@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jee-Papers</title>
+        <link rel="stylesheet" href="css/Logsign.css">
+        <link href="img/favicon.ico" rel="icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+                crossorigin="anonymous">
+
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+                rel="stylesheet">
+
+        
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+        <style>
+                .contformleft,
+                .contformright {
+                        width: 410px;
+                }
+
+                @media screen and (max-width : 1220px) {
+
+                        .contformleft,
+                        .contformright {
+                                width: 310px;
+                        }
+                }
+
+                @media screen and (max-width : 980px) {
+
+                        .contformleft,
+                        .contformright {
+                                width: 270px;
+                        }
+                }
+
+                @media screen and (max-width : 660px) {
+
+                        .contformleft,
+                        .contformright {
+                                width: 90%;
+                                margin: 0px auto;
+                                float: none
+                        }
+                }
+
+                table {
+                        width: 100%;
+                        border-collapse: collapse;
+                }
+
+                /* Zebra striping */
+                tr:nth-of-type(odd) {
+                        background: #eee;
+                }
+
+                td,
+                th {
+                        padding: 6px;
+                        border: 1px solid #ccc;
+                        text-align: left;
+                }
+                
+                .bodycontainer h1,#h31{
+                        display: flex;
+                        /* background-color: #06BBCC; */
+                        /* background-position: center; */
+                        margin: 20px 10px 20px 10px;
+                        align-items: center;
+                        justify-content: center;
+                }
+                .bodycontainer #p1,#p2,h2{
+                        display: flex;
+                        margin: 0px 50px 0px 50px;
+                        align-items: center;
+                        justify-content: center;
+                }
+                .bodycontainer h2{
+                        display: flex;
+                        margin: auto;
+                        align-items: center;
+                        justify-content: center;
+                }
+                .bodycontainer h3 {
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: #4A4A4A;
+                        margin-bottom: 20px;
+                }
+        </style>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+                <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                    <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>ePapers</h2>
+                </a>
+                <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto p-4 p-lg-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="courses.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Papers</a>
+                            <div class="dropdown-menu fade-down m-0">
+                                <a href="defencepaper.html" class="dropdown-item">Defence Exams</a>
+                                <a href="jee.html" class="dropdown-item">Jee Papers</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>
+                        <a href="about.html" class="nav-item nav-link">About</a>                
+                        
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="login.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Log In</a>
+                    <a href="signup.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Sign Up</a>
+                </div>
+            </nav>
+        <div class="container-fluid bg-primary py-5 mb-5 page-header">
+                <div class="container py-5">
+                        <div class="row justify-content-center">
+                                <div class="col-lg-10 text-center">
+                                        <h1 class="display-3 text-white animated slideInDown">JEE Main Past Year Papers
+                                        </h1>
+                                        <nav aria-label="breadcrumb">
+                                                <ol class="breadcrumb justify-content-center">
+                                                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                                                    <li class="breadcrumb-item"><a class="text-white" href="courses.html">Papers</a></li>
+                                                    <li class="breadcrumb-item text-white active" aria-current="page">JEE Papers</li>
+                                                </ol>
+                                            </nav>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <section class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+
+                <div class="container">
+        
+        
+                    <div class="row">
+                        <img src="img/jee.jpg" alt="loginimage" class="img-fluid p-5 m-10">
+                    </div>
+                </div>
+                <div class="bodycontainer">
+                        <h1>JEE Main Previous Year Papers [2022-2015]</h1>
+                        <h3 id="h31">Download JEE Mains Past Year Question Papers with Answer Key and Solution in PDF</h3>
+                        <!-- <p><img src="/Images/jee-main-past-year-papers.jpg" alt="JEE Main Past Year Papers." /></p> -->
+                        <p id="p1">JEE Main examination is conducted in online mode by NTA in two shifts on multiple days. The
+                                difficulty level of JEE Main paper is the same for all days and shifts. Here you can download
+                                JEE Main past year papers with answer key and solution in PDF format.</p>
+                        <p id="p2">Every JEE aspirant must solve previous year papers of JEE Main for better preparation of the
+                                exam. It's recommended to solve JEE Main full paper tests after you've gone through the complete
+                                syllabus and have a clear understanding of every topic in all the chapters. Practice JEE Mains
+                                previous years papers and online mock tests in a time bound manner, like you are solving the
+                                real paper in a 3 hour duration.</p>
+        
+                        <h2>Download JEE Main Previous Year Papers [PDF]</h2>
+                        <h3>JEE Mains 2022 Question Paper Session-1</h3>
+                        <p>JEE Main 2022 Session-1 Question Papers (June) : </p>
+                        <table>
+                                <tr>
+                                        <th>JEE Main 2022 Session-1 Question Paper (Exam Date)</th>
+                                        <th>Shift-1 (Morning)</th>
+                                        <th>Shift-2 (Evening)</th>
+                                </tr>
+                                <tr>
+                                        <td>24th June 2022</td>
+                                        <td><a href="https://drive.google.com/file/d/1_bsI_EzonyryCqhgOP-b0VDjNKlYtf5Q/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                        <td><a href="https://drive.google.com/file/d/18FKlMNML259ORQKirVJ9vjdK9pICd3_W/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                                <tr>
+                                        <td>25th June 2022</td>
+                                        <td><a href="https://drive.google.com/file/d/18OHcaUw7N0xcolzlS4A7-BdjYKLYYU5x/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1DLWZbKuzpWB7k5fgpheYPJUcJn4owU81/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                                <tr>
+                                        <td>26th June 2022</td>
+                                        <td><a href="https://drive.google.com/file/d/1VZwChwauXb0AwW8uT6oyY3Dl-Yvs8S-u/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1kB7Nv_ZptFqJlFB7RCNwa6Q01V1Du7iV/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                                <tr>
+                                        <td>27th June 2022</td>
+                                        <td><a href="https://drive.google.com/file/d/122nHuAi1srgnOZaJ6vclIpq4PUPVNsk9/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1Bv9M7HBR-c-xevvh6Ze_jUXYDkByJp4n/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                                <tr>
+                                        <td>28th June 2022</td>
+                                        <td><a href="https://drive.google.com/file/d/1MK57XaTcOPnV5PvZGnxsxBj1Ygmz2amh/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1zmQFz9PYP1KAAJk9hCwlJdXowu5b1uyj/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                        </table>
+                        <p></p>
+                        <h3>JEE Mains 2022 Question Paper Session-2</h3>
+                        <p>JEE Main 2022 Session-2 Question Papers (July) : </p>
+                        <table>
+                                <tr>
+                                        <th>JEE Main 2022 Exam Date</th>
+                                        <th>Physics</th>
+                                        <th>Chemistry</th>
+                                        <th>Math</th>
+                                </tr>
+                                <tr>
+                                        <td>25th July - Day 1, Shift 1</td>
+                                        <td><a href="https://drive.google.com/file/d/19AZ3jKCmGReOGL4jvtAqjj0a2SXmck0d/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1nrBbu_BD_Q_XmGvbKnnvcv4JymDUPEJx/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1ll5pnwGK9k1bJk7iKESVCZrnfrDd1mCd/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                                <tr>
+                                        <td>25th July - Day 1, Shift 2</td>
+                                        <td><a href="https://drive.google.com/file/d/1DlJmXYYJlWyk1qM9eb_h1fVajtEkfvqn/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1FmE8e7MQd7fjzKLEs19vg0gvPjkdWqYE/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1gG2CcYJX2Ptkc-n2l9UK89sUdhuthb2R/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                                <tr>
+                                        <td>26th July - Day 2, Shift 1</td>
+                                        <td><a href="https://drive.google.com/file/d/1wlQAJknWGdj7KvfFYe-cc_iG_sJf4NAk/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1nP0-4Cx_Rl7ofDBs-qxz8GVVYGeaNMM2/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1scB11s17PxCaUgKX10YUH_0UKaHDHLmL/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                                <tr>
+                                        <td>26th July - Day 2, Shift 2</td>
+                                        <td><a href="https://drive.google.com/file/d/1V3yJztkPE5XJLXaYqrfQG9rElWP67rcL/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1q7sMQHMPqeBOXt0FAjNnG31ZFrmRRpxl/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1l4OlOW5S_Nv8_F-ppOL2qMBdGTtxLle9/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                                <tr>
+                                        <td>27th July - Day 3, Shift 1</td>
+                                        <td><a href="https://drive.google.com/file/d/12lMwP2ja5VAJhOaoNjVs-OPi8Mxi2QvA/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1T1ZfsPHtPCuhDX1RBR7MAJrEObBRF2kB/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1IK4Nh9oMcDOMtIAGMpRvmmDQosFTwR0X/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                                <tr>
+                                        <td>27th July - Day 3, Shift 2</td>
+                                        <td><a href="https://drive.google.com/file/d/1_3Nwnnlv7IQBSFxwIjZy_qJKYsfoWSnk/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1gZxgaEUzaGcxfaGKRN2gn_8jpYNsr6BG/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1f8Qiu4Y7NQLybSRHCC50cueD8kA4ZphT/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                                <tr>
+                                        <td>28th July - Day 4, Shift 1</td>
+                                        <td colspan="3" style="text-align:center"><a
+                                                        href="https://drive.google.com/file/d/1JMtSU3htFtRVrQFSASXtGxEOZN2WnM8J/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                                <tr>
+                                        <td>28th July - Day 4, Shift 2</td>
+                                        <td colspan="3" style="text-align:center"><a
+                                                        href="https://drive.google.com/file/d/1l-vYnGLj1vEF9H5zb6gJGGKj9xLQBYCi/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                                <tr>
+                                        <td>29th July - Day 5, Shift 1</td>
+                                        <td colspan="3" style="text-align:center"><a
+                                                        href="https://drive.google.com/file/d/1oJ4dCUnZuH6ZrbyHHEGSjyfou_orr21f/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                                <tr>
+                                        <td>29th July - Day 5, Shift 2</td>
+                                        <td colspan="3" style="text-align:center"><a
+                                                        href="https://drive.google.com/file/d/1nB0wNHh858S2OzFc-I5ibxXnVNMBC4xr/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                        </table>
+                        <p></p>
+                        <h3>JEE Mains 2021 Question Paper</h3>
+                        <p>JEE Main 2021 Question Paper of all shifts (February) : </p>
+                        <table>
+                                <tr>
+                                        <th>JEE Main 2021 February Question Paper (Exam Date)</th>
+                                        <th>Shift-1 (Morning)</th>
+                                        <th>Shift-2 (Evening)</th>
+                                </tr>
+                                <tr>
+                                        <td>24th February 2021</td>
+                                        <td><a href="https://drive.google.com/file/d/1yl9SPNq-WeW0Oc0-SBip3-mpzgcPqgJG/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1xXI3nLU49SkUfE36MBvRu8HvEI9MJclm/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                                <tr>
+                                        <td>25th February 2021</td>
+                                        <td><a href="https://drive.google.com/file/d/1WFnnu-VZrRXAXoNgK-PSaqDmRJgaq0_f/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1vO5YDtC4s0cTPcWaXBzDmm13-txDI2f-/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                                <tr>
+                                        <td>26th February 2021</td>
+                                        <td><a href="https://drive.google.com/file/d/1IzWfkBmW7fE_GofT-k2eDwBHHlFOL1T6/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1GOLib79BCTiK95IRsPKg9ZUkuikc_E01/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                        </table>
+                        <p></p>
+                        <p>JEE Main 2021 Question Paper of all shifts (March) : </p>
+                        <table>
+                                <tr>
+                                        <th>JEE Main 2021 March Question Paper (Day and Shift)</th>
+                                        <th>Physics</th>
+                                        <th>Chemistry</th>
+                                        <th>Math</th>
+                                </tr>
+                                <tr>
+                                        <td>16th March - Day 1, Shift 1</td>
+                                        <td><a href="https://drive.google.com/file/d/1FquBV67azb_2NrmJr9Vb7FyqZhfM8Eca/view?usp=sharing">Physics</a>
+                                        </td>
+                                        <td><a href="https://drive.google.com/file/d/1f6n3h_eY4YihIWfo5qFYSbFMuDxnY7Ws/view?usp=sharing">Chemistry</a>
+                                        </td>
+                                        <td><a href="https://drive.google.com/file/d/1HDuYLtWD4hiN_TBWU37kB0c-kyfQHdLq/view?usp=sharing">Math</a>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td>16th March - Day 1, Shift 2</td>
+                                        <td><a href="https://drive.google.com/file/d/1nSOU3oTB4mNkK7MvDTGsBlUAzr-JZJZW/view?usp=sharing">Physics</a>
+                                        </td>
+                                        <td><a href="https://drive.google.com/file/d/1_WYHW_TWi2GWzQ7CQuCwMIu0lyWv20ot/view?usp=sharing">Chemistry</a>
+                                        </td>
+                                        <td><a href="https://drive.google.com/file/d/1CaQ1c-_H52k27KEbLsC7_jP-BEY0uIox/view?usp=sharing">Math</a>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td>17th March - Day 2, Shift 1</td>
+                                        <td><a href="https://drive.google.com/file/d/1GDstCPebrTLGJARC4KddoLMbhDCYqKy5/view?usp=sharing">Physics</a>
+                                        </td>
+                                        <td><a href="https://drive.google.com/file/d/1OcmQx1THqIVuVPrtzWPZySfUqVQaW-k6/view?usp=sharing">Chemistry</a>
+                                        </td>
+                                        <td><a href="https://drive.google.com/file/d/1XrZqfXPdP7EnL-DSwoSPmpwIWeWq4_Dg/view?usp=sharing">Math</a>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td>17th March - Day 2, Shift 2</td>
+                                        <td><a href="https://drive.google.com/file/d/1HocHwYyEB6XnQMjG5vK8ZGhkRChOlooZ/view?usp=sharing">Physics</a>
+                                        </td>
+                                        <td><a href="https://drive.google.com/file/d/1FaWg2_xYXc0vBqCFy3wNcDxLmtpdd1q6/view?usp=sharing">Chemistry</a>
+                                        </td>
+                                        <td><a href="https://drive.google.com/file/d/17RMp42voyBeGUHg6C55z-stPrD__CZ8g/view?usp=sharing">Math</a>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td>18th March - Day 3, Shift 1</td>
+                                        <td><a href="https://drive.google.com/file/d/1rASIyDwrAsO2qd8ra2-ThRV476LEWFgr/view?usp=sharing">Physics</a>
+                                        </td>
+                                        <td><a href="https://drive.google.com/file/d/1FMEZH23B0-n33tL3CKAO434kE3pLfYQe/view?usp=sharing">Chemistry</a>
+                                        </td>
+                                        <td><a href="https://drive.google.com/file/d/12JziAs_422VdoJ_qr6szyBPkTia_hcCH/view?usp=sharing">Math</a>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td>18th March - Day 3, Shift 2</td>
+                                        <td><a href="https://drive.google.com/file/d/1vpY7pn_RRw14xBY97YnSojnak4au3JWd/view?usp=sharing">Physics</a>
+                                        </td>
+                                        <td><a href="https://drive.google.com/file/d/1wZT6Q563gLLR5LLFVGHH4lOP17OLWWsJ/view?usp=sharing">Chemistry</a>
+                                        </td>
+                                        <td><a href="https://drive.google.com/file/d/1sttidyxZj8tSY6zCWBTHzHUCwN1WAfjN/view?usp=sharing">Math</a>
+                                        </td>
+                                </tr>
+                        </table>
+                        <p></p>
+                        <h3>JEE Mains 2020 Question Paper</h3>
+                        <p>JEE Main 2020 Question Paper of all shifts (January) : </p>
+                        <table>
+                                <tr>
+                                        <th>JEE Main 2020 January Question Papers</th>
+                                        <th>Download PDF</th>
+                                </tr>
+                                <tr>
+                                        <td>JEE Main 2020 Question Paper Day 1 Shift 1</td>
+                                        <td><a href="https://drive.google.com/file/d/1y9_nrP-__Nt_F6sP2be6CIJK518QTW5s/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                                <tr>
+                                        <td>JEE Main 2020 Question Paper Day 1 Shift 2</td>
+                                        <td><a href="https://drive.google.com/file/d/1TgrE4v7u_t2H_ru0mXXh38Ov7X0Qbcnh/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                                <tr>
+                                        <td>JEE Main 2020 Question Paper Day 2 Shift 1</td>
+                                        <td><a href="https://drive.google.com/file/d/12Fxch0S-G2BPFT2X_IjgQGb3fB40em50/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                                <tr>
+                                        <td>JEE Main 2020 Question Paper Day 2 Shift 2</td>
+                                        <td><a href="https://drive.google.com/file/d/1FYXriyzGEJGDansjGlN-fpk3PH9N-6IG/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                                <tr>
+                                        <td>JEE Main 2020 Question Paper Day 3 Shift 1</td>
+                                        <td><a href="https://drive.google.com/file/d/1Y72nPQQpbF6VY1s72SPigxfIPh4ymrx6/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                                <tr>
+                                        <td>JEE Main 2020 Question Paper Day 3 Shift 2</td>
+                                        <td><a href="https://drive.google.com/file/d/1hQD26K0xiZ7CEmgOrjVyjKFSJD38FwxX/view?usp=sharing">Download
+                                                        PDF</a></td>
+                                </tr>
+                        </table>
+                        <p></p>
+                        <h3>JEE Mains 2019 Question Paper</h3>
+                        <p>JEE Main 2019 Online Question Papers of all shifts (January and April) : </p>
+                        <table>
+                                <tr>
+                                        <th>JEE Main 2019 January Question Papers</th>
+                                        <th>JEE Main 2019 April Question Papers</th>
+                                </tr>
+                                <tr>
+                                        <td><a href="https://drive.google.com/file/d/13qC6PHyIXUnm13S8VjO4VWey_6VSqcFa/view?usp=sharing">9th
+                                                        January 2019 Shift 1</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1uwziCtbb3jl_q4NICDh8Ro49szr2JiIu/view?usp=sharing">8th
+                                                        April 2019 Shift 1</a></td>
+                                </tr>
+                                <tr>
+                                        <td><a href="https://drive.google.com/file/d/1QF6U3690fs819M2esJbCHD8aMvDNHB12/view?usp=sharing">9th
+                                                        January 2019 Shift 2</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1RAtBSA3YxaTgSTYefbg7TYsGXzc3lTAb/view?usp=sharing">8th
+                                                        April 2019 Shift 2</a></td>
+                                </tr>
+                                <tr>
+                                        <td><a href="https://drive.google.com/file/d/1SD5G4OIa8PlHUKf-A869poipoqp4Qx4I/view?usp=sharing">10th
+                                                        January 2019 Shift 1</a></td>
+                                        <td><a href="https://drive.google.com/file/d/11d3SmW9IadTohcwVOa6QI1QUrw2q_YBB/view?usp=sharing">9th
+                                                        April 2019 Shift 1</a></td>
+                                </tr>
+                                <tr>
+                                        <td><a href="https://drive.google.com/file/d/1DNLx9p9id-QHwzgSm2fWJ7IJYHF8Fv40/view?usp=sharing">10th
+                                                        January 2019 Shift 2</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1KT7gxZVnYQ-WkAv9jKbJHG-TPF34rdPU/view?usp=sharing">9th
+                                                        April 2019 Shift 2</a></td>
+                                </tr>
+                                <tr>
+                                        <td><a href="https://drive.google.com/file/d/1QIBIk0gQ7Csj-CBWHncruTigTBYwWltM/view?usp=sharing">11th
+                                                        January 2019 Shift 1</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1BG942OYpiPfd4BmVGI0sd4JwILk6c88j/view?usp=sharing">10th
+                                                        April 2019 Shift 1</a></td>
+                                </tr>
+                                <tr>
+                                        <td><a href="https://drive.google.com/file/d/1pNwEC5poA8yQHccMsuPIM6DrXWZLJ0Ir/view?usp=sharing">11th
+                                                        January 2019 Shift 2</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1e2FSs7T-8tdt4Ei5yxaEqyAcpWykSRbx/view?usp=sharing">10th
+                                                        April 2019 Shift 2</a></td>
+                                </tr>
+                                <tr>
+                                        <td><a href="https://drive.google.com/file/d/1ztFrvm79HP9q6X0RDmEAN7IZ8rjkvn5u/view?usp=sharing">12th
+                                                        January 2019 Shift 1</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1egSm8Q4O3wQJ-UeyvSbj86dAOmnJXK1p/view?usp=sharing">12th
+                                                        April 2019 Shift 1</a></td>
+                                </tr>
+                                <tr>
+                                        <td><a href="https://drive.google.com/file/d/1yeCoX6p5tezjgdVFAUhr4N7K-c-teLOk/view?usp=sharing">12th
+                                                        January 2019 Shift 2</a></td>
+                                        <td><a href="https://drive.google.com/file/d/1iOzFbg8GZDeDZ8ayTOY_JhVLQJ8ak2MV/view?usp=sharing">12th
+                                                        April 2019 Shift 2</a></td>
+                                </tr>
+                        </table>
+                        <p></p>
+                        <p>JEE Main 2018 Paper (Offline): <a
+                                        href="https://drive.google.com/file/d/1uKNyB_ulyfpGO-NWEleKMCkr6OR3JAyo/view?usp=sharing">Set
+                                        A</a> | <a
+                                        href="https://drive.google.com/file/d/1aJY9N6IHvJvJ3PcYCQ2CQl-URFzKcVWf/view?usp=sharing">Set
+                                        B</a> | <a
+                                        href="https://drive.google.com/file/d/1JjjcmGTF42iPYz6t0BLYe-1mjZHoe2lv/view?usp=sharing">Set
+                                        C</a> | <a
+                                        href="https://drive.google.com/file/d/1ZSrg0o5q0TfAoPgK6hBM5GQiVjJV15DT/view?usp=sharing">Set
+                                        D</a></p>
+                        <p>JEE Main 2018 Paper (Online): <a
+                                        href="https://drive.google.com/file/d/1oz2GpZH9SZk6P0nGRSkYrFw0PxW0Fas4/view?usp=sharing">Day
+                                        1</a> | <a
+                                        href="https://drive.google.com/file/d/1A3RiAiSrWTmiDMQr66Rdq-TL1cUVe4p6/view?usp=sharing">Day
+                                        2</a></p>
+                        <p>JEE Main 2017 Paper (Offline): <a
+                                        href="https://drive.google.com/file/d/1WKiHNJt3XtZGBjmkPGHokD-TAKdacCMA/view?usp=sharing">Set
+                                        A</a> | <a
+                                        href="https://drive.google.com/file/d/163Cyh3qBDfI-BXZTcq_t1f_RtGxC-_ym/view?usp=sharing">Set
+                                        B</a> | <a
+                                        href="https://drive.google.com/file/d/1XAvCZ_-RjzZeoJyJlWcPUKcrrzB5WAqg/view?usp=sharing">Set
+                                        C</a> | <a
+                                        href="https://drive.google.com/file/d/1leGudruAg69SCoLjMIULN_1I6Vgxg_tK/view?usp=sharing">Set
+                                        D</a></p>
+                        <p>JEE Main 2017 Paper (Online): Day 1 <a
+                                        href="https://drive.google.com/file/d/1WvMfSe9UfTIRj_FfgIE4_lX3Dd6G591d/view?usp=sharing">Physics</a>
+                                <a
+                                        href="https://drive.google.com/file/d/1GDnDN3CCi0MhrQFotrMigLRWXyLR3swR/view?usp=sharing">Chemistry</a>
+                                <a
+                                        href="https://drive.google.com/file/d/1TspjdqrzduWrSNw0lKMUkexOr4z_EV4q/view?usp=sharing">Mathematics</a>
+                                | Day 2 <a
+                                        href="https://drive.google.com/file/d/18ezw8EAyRli1m-y1TBZW91-DMJJ_p2V-/view?usp=sharing">Physics</a>
+                                <a
+                                        href="https://drive.google.com/file/d/1gmxFeLE6YqPi0qUlFsPAk_tW6ikl9o4v/view?usp=sharing">Chemistry</a>
+                        </p>
+                        <p>JEE Main 2016 Paper (Offline): <a
+                                        href="https://drive.google.com/file/d/1ah6a6UQkcMV6TgwUwInf1n4Gcx5V0_Tw/view?usp=sharing">Set
+                                        E</a> | <a
+                                        href="https://drive.google.com/file/d/1Bn0N5NLjYbOFy-Nb8J5AYUde-B8wR6uD/view?usp=sharing">Set
+                                        F</a> | <a
+                                        href="https://drive.google.com/file/d/1jlM4Jw9h2T0FywsnkypBCC4rLT4QG2F1/view?usp=sharing">Set
+                                        G</a> | <a
+                                        href="https://drive.google.com/file/d/1EmFo10jpbt-JK4QMfbnsIT6Ww-t4VwKo/view?usp=sharing">Set
+                                        H</a></p>
+                        <p>JEE Main 2016 Paper (Online): <a
+                                        href="https://drive.google.com/file/d/14jWJ8ks68qHpzeR-F0BLzGQOAtkPYcIP/view?usp=sharing">Day
+                                        1</a> | <a
+                                        href="https://drive.google.com/file/d/1GSNYC7JShLVPQWudDqJXrdKSMKFa_mqu/view?usp=sharing">Day
+                                        2</a></p>
+                        <p>JEE Main 2015 Paper (Offline): <a
+                                        href="https://drive.google.com/file/d/1GPT6RwgtQP7eFZz2T-cAmHDwZXAkF2M8/view?usp=sharing">Set
+                                        A</a> | <a
+                                        href="https://drive.google.com/file/d/1xii-ZpIMf76gsgdYnW5XJV2yxeiqTxuk/view?usp=sharing">Set
+                                        B</a> | <a
+                                        href="https://drive.google.com/file/d/10pB6An5e1oRkyOUulBlo_n5kOMQ2GGfD/view?usp=sharing">Set
+                                        C</a> | <a
+                                        href="https://drive.google.com/file/d/1LM3XphOvpo5ZaIdo1x0BxkRnf1jObWgs/view?usp=sharing">Set
+                                        D</a></p>
+                        <p>JEE Main 2015 Paper (Online): <a
+                                        href="https://drive.google.com/file/d/1KVLZTOZxB-tuPw658mplynr5jt6IrFsc/view?usp=sharing">Day
+                                        1</a> | <a
+                                        href="https://drive.google.com/file/d/1LVpGgkB7HSSS9WBpg7kvCpt8iqqKGPhC/view?usp=sharing">Day
+                                        2</a></p>
+                </div>
+        </section>
+        
+        <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Ring Rd, Nehru Nagar, lajpat nagar, New-Delhi,Delhi 110065</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a href="tel: +91 8307601375">+91 8307601375</a><br><a href="tel: +91 8527891689">+91 8527891689</a></p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto: sxnu.in@gmail.com">sxnu.in@gmail.com</a></p>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="index.html">ePapers</a>, All Right Reserved.</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="index.html">Home</a>
+                            <a href="contact.html">Help</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+<!-- <script>
+        
+  window.onload = () => {
+    const token = sessionStorage.getItem("token");
+    if (token === null) {
+      window.location = "login.html";
+    }
+  };
+
+</script> -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
